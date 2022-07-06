@@ -5,12 +5,12 @@ function fillDeck() {
 
     let filledDeck = [];
 
-    for (const value of cardsValue) {
+    cardsValue.forEach((value)=> {
         cardsColor.forEach((color)=> {
             filledDeck.push(value + color);
         });
-    }
-
+    });
+        
     return filledDeck;
 }
             
